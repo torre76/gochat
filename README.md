@@ -22,3 +22,19 @@ To run this server
 ```bash
 go run main.go
 ```
+
+### Running on Docker
+
+If you prefer using [Docker](https://www.docker.com) you can use the image [torre76/gochat:latest](https://hub.docker.com/r/torre76/gochat):
+
+```bash
+docker run -p 10000:10000 torre76/gochat:latest
+```
+
+if you want to use it on _foreground_ mode or:
+
+```bash
+docker run -d -p 10000:10000 torre76/gochat:latest
+```
+
+if you prefer a _daemon_ mode.
